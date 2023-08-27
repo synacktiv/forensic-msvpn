@@ -1,13 +1,13 @@
 # Microsoft Remote Access VPN Forensic analysis
 
 This repository contains resources related to the forensic analysis made on Microsoft Remote Access VPN and available on this blog post: https://www.synacktiv.com/publications/forensic-aspects-of-microsoft-remote-access-vpn.html. 
-- a Velociraptor client artifact [Windows.EventLogs.RemoteAccessVPN.yml](./velociraptor_client_artifact/Windows.EventLogs.RemoteAccessVPN.yml)
+- a Velociraptor client artifact [Windows.EventLogs.RemoteAccessVPN.yaml](./velociraptor_client_artifact/Windows.EventLogs.RemoteAccessVPN.yaml)
 - 7 chainsaw rules in the [microsoft_rasvpn_events](./chainsaw_rules/microsoft_rasvpn_events/) directory
 - and a Python script to execute on the VPN server that allows to dump the RaAcctDb WID database in CSV files [csv_export_raacctdb.py](./csv_export_raacctdb/csv_export_raactdb.py)
 
 ## Velociraptor artifact
 
-Import the [Velociraptor Artifact Exchange](https://docs.velociraptor.app/exchange/) pack or import [Windows.EventLogs.RemoteAccessVPN.yml](./velociraptor_client_artifact/Windows.EventLogs.RemoteAccessVPN.yml) from this repository.
+Import the [Velociraptor Artifact Exchange](https://docs.velociraptor.app/exchange/) pack or import [Windows.EventLogs.RemoteAccessVPN.yaml](./velociraptor_client_artifact/Windows.EventLogs.RemoteAccessVPN.yaml) from this repository.
 
 - Summary of the artifact
 ![velociraptor summary](velociraptor_client_artifact/images/velociraptor_summary.png)
