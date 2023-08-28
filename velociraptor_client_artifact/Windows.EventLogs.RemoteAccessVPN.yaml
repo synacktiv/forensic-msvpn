@@ -22,6 +22,7 @@ description: |
     
 
 reference:
+    - https://www.synacktiv.com/publications/forensic-aspects-of-microsoft-remote-access-vpn.html
     - https://learn.microsoft.com/en-us/windows-server/remote/remote-access/remote-access
 
 precondition: SELECT OS From info() where OS = 'windows'
