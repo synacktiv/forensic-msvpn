@@ -25,13 +25,13 @@ fields:
     to: Event.EventData.Data
 
 filter:
-  condition: connection_error_network_protocol or connection_error_other_reason
+  condition: auth_no_projections or ppp_failure
 
-  connection_error_network_protocol:
+  auth_no_projections:
       Event.System.EventID: 20253
       Event.System.Channel: System
       Event.System.Provider: RemoteAccess
-  connection_error_other_reason:
+  ppp_failure:
       Event.System.EventID: 20255
       Event.System.Channel: System
       Event.System.Provider: RemoteAccess

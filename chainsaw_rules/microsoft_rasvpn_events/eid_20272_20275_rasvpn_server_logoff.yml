@@ -25,13 +25,13 @@ fields:
     to: Event.EventData.Data
 
 filter:
-  condition: user_logoff or user_logoff_detailed
+  condition: user_active_time_vpn or ip_user_disconnected
 
-  user_logoff_detailed:
+  user_active_time_vpn:
       Event.System.EventID: 20272
       Event.System.Channel: System
       Event.System.Provider: RemoteAccess
-  user_logoff:
+  ip_user_disconnected:
       Event.System.EventID: 20275
       Event.System.Channel: System
       Event.System.Provider: RemoteAccess

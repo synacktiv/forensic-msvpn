@@ -25,9 +25,14 @@ fields:
     to: Event.EventData.Data
 
 filter:
-  condition: connection_error
+  condition: invalid_server_cert or rasconnection_failed
 
-  connection_error:
+  invalid_server_cert:
+      Event.System.EventID: 20227
+      Event.System.Channel: Application
+      Event.System.Provider: RasClient
+
+  rasconnection_failed:
       Event.System.EventID: 20227
       Event.System.Channel: Application
       Event.System.Provider: RasClient

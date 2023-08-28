@@ -25,13 +25,13 @@ fields:
     to: Event.EventData.Data
 
 filter:
-  condition: successful_logon or successful_logon_tunnelip
+  condition: auth_success or ip_user_connected
 
-  successful_logon:
+  auth_success:
       Event.System.EventID: 20250
       Event.System.Channel: System
       Event.System.Provider: RemoteAccess
-  successful_logon_tunnelip:
+  ip_user_connected:
       Event.System.EventID: 20274
       Event.System.Channel: System
       Event.System.Provider: RemoteAccess

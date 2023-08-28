@@ -25,9 +25,9 @@ fields:
     to: Event.EventData.Data
 
 filter:
-  condition: connection_termination
+  condition: rasconnection_terminated
 
-  connection_termination:
+  rasconnection_terminated:
       Event.System.EventID: 20226
       Event.System.Channel: Application
       Event.System.Provider: RasClient

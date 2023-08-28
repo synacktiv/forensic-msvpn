@@ -25,9 +25,9 @@ fields:
     to: Event.EventData.Data
 
 filter:
-  condition: authentication_error
+  condition: ntauth_failure
 
-  authentication_error:
+  ntauth_failure:
       Event.System.EventID: 20271
       Event.System.Channel: System
       Event.System.Provider: RemoteAccess

@@ -25,25 +25,25 @@ fields:
     to: Event.EventData.Data
 
 filter:
-  condition: connection_establishment_dialing or connection_establishment_trying or connection_establishment_success or connection_establishment_link_established or connection_establishment_dialed
+  condition: preconnect_info or connecting_device or device_connected or link_established or rasconnection_established
 
-  connection_establishment_dialing:
+  preconnect_info:
       Event.System.EventID: 20221
       Event.System.Channel: Application
       Event.System.Provider: RasClient
-  connection_establishment_trying:
+  connecting_device:
       Event.System.EventID: 20222
       Event.System.Channel: Application
       Event.System.Provider: RasClient
-  connection_establishment_success:
+  device_connected:
       Event.System.EventID: 20223
       Event.System.Channel: Application
       Event.System.Provider: RasClient
-  connection_establishment_link_established:
+  link_established:
       Event.System.EventID: 20224
       Event.System.Channel: Application
       Event.System.Provider: RasClient
-  connection_establishment_dialed:
+  rasconnection_established:
       Event.System.EventID: 20225
       Event.System.Channel: Application
       Event.System.Provider: RasClient
